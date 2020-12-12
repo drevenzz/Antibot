@@ -3,8 +3,12 @@ from common.util import get_skill, join, split, skillable
 from time import asctime
 
 custom = {}
-with open('skills/custom/skills.json') as f:
-    custom = json.load(f)
+with open('skills/custom/skills.json',  'w+') as f:
+    try:
+        custom = json.load(f)
+    except Exception:
+        json.dump(custom, f)
+    
 
 skillDetails = '''[bcu]"{name}" details
 
