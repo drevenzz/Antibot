@@ -21,11 +21,11 @@ To start the bot, you need to run main.sh:
 export AMINO_USER="mail@example.com"
 export AMINO_PASS="P4sSwor!d."
 
-# Make sure the script is executable
-chmod +x main.sh
+# Make sure Antibot is executable
+chmod +x bot.py
 
-# Run the script
-./main.sh
+# Run Antibot
+./bot.py
 ```
 
 ## Further improve the bot
