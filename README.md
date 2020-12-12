@@ -75,12 +75,12 @@ modules = [base, myNewSkill]
 And you are done.
 
 ## TODO
-[] Add a man page for each skill.
+[ ] Add a man page for each skill.
 
-[] Add a `'man'` key for each skill. The value will be displayed inside the man page.
+[ ] Add a `'man'` key for each skill. The value will be displayed inside the man page.
 
-[] Delete syntax information inside the help output.
+[ ] Delete syntax information inside the help output.
 
-[] Use a database instead of jsons for persistency.
+[ ] Use a database instead of jsons for persistency.
 
-[] Include `'mute'` and `'unmute'` skills for each chat.
+[ ] Include `'mute'` and `'unmute'` skills for each chat.
