@@ -4,3 +4,5 @@ __pycache__
 run.sh
 .vscode
 device.json
+skills.json
+src.json
