@@ -6,8 +6,6 @@ error = 'You need to tag exactly one recipient.'
 
 invuln = {
     'c906acd4-66a3-4275-8f05-3d2b86abb509', # Antitesista
-    '7a954dcf-1cd5-4911-ad34-6f11eb4f4e18', # M
-    '1cbe94c5-605e-4329-9904-e41e769d1858' # Rosa
 }
 invulnMsg = '* {username} is invulnerable *'
 
