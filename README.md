@@ -17,15 +17,22 @@ cd Antibot
 ## Usage
 To start the bot, you need to run main.sh:
 ```bash
+# Make sure Antibot is executable (just the first time)
+chmod +x bot.py
+
+
+# Install the requirements for the bot (also the first time)
+pip install -r requirements.txt
+
 # Export your account credentials to environment variables. Do not store them inside files!
+# Do this every time you restart your terminal
 export AMINO_USER="mail@example.com"
 export AMINO_PASS="P4sSwor!d."
 
-# Make sure Antibot is executable
-chmod +x bot.py
-
 # Run Antibot
 ./bot.py
+
+# To stop it, just hit ctrl+c
 ```
 
 ## Further improve the bot
