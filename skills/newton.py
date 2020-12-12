@@ -15,7 +15,7 @@ def solve(data, context):
         exp=quote(context.sParams)
     ))
     if resp.status_code // 100 != 2:
-        return error
+        return {'message': error, 'replyTo': context.origin}
     result = resp.json()['result']
     result = result if result else error
     return {'message': result, 'replyTo': context.origin}

@@ -114,7 +114,7 @@ def details(data, context):
     '''
     error = 'File not found.'
     name = context.sParams.strip().lower()
-    if name not in files[context.chatId]:
+    if name not in files.get(context.chatId, []):
         return {'message': error, 'replyTo': context.origin}
     result = mediaDetails.format(**files[context.chatId][name])
     return {'message': result, 'mentionUserIds': [files[context.chatId][name]['authorId']]}
