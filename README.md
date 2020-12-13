@@ -51,6 +51,7 @@ skills = {
 
 The file should abide by these rules:
 [ ] skillName: One-word name for the skill. It must be prefixed with '$' when invoked
+
 [ ] callback: A function that:
   - Receives `data` (the data received by the event callback in Amino.py)
   - Returns a dictionary with the parameters you want for `subclient.send_message()`. Here, you **must** always include the `message`key.
