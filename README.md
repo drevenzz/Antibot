@@ -1,7 +1,7 @@
 # Antibot
 ## Description
-Abtibot is a fully modular, easy to use and extensible Amino bot. It has never beenthis easy to add new skills to an Amino bot.
-Built over the *slightly modified* Amino.py library, it is pretty straight forward to use right out of the box. You just need to remove the `security=False` inside `bot.py` for it to work. I wont remove it first, because I modified Amino.py to work that way. (you can always just use my fork of the library for that purpose.
+Abtibot is a fully modular, easy to use and extensible Amino bot. It has never been this easy to add new skills to a bot (just kidding, but it's still pretty good).
+Built over the *slightly modified* [Amino.py](https://github.com/fredrare/Amino.py) library, it is pretty straight forward to use right out of the box. You just need to remove the `security=False` inside `bot.py` for it to work. I wont remove it first, because I modified [Amino.py](https://github.com/Slimakoi/Amino.py) to work that way.
 
 ## Get the bot
 You need to run the following to get Antibot inside your computer:
