@@ -20,7 +20,6 @@ To start the bot, you need to run main.sh:
 # Make sure Antibot is executable (just the first time)
 chmod +x bot.py
 
-
 # Install the requirements for the bot (also the first time)
 pip install -r requirements.txt
 
