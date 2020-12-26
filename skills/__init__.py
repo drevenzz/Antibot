@@ -1,9 +1,9 @@
-from skills import base, bitcoin, newton, usery, custom, media
+from skills import base, bitcoin, newton, usery, custom, media, speak
 from common.util import get_skill, sanitize
 from re import sub
 
 skills = base.skills
-modules = [bitcoin, newton, usery, custom, media]
+modules = [bitcoin, newton, usery, custom, media, speak]
 for module in modules:
     skills.update(module.skills)
 

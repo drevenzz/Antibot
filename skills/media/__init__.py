@@ -19,11 +19,12 @@ mediaDetails = '''[bcu]"{name}" details
 '''
 
 files = {}
-with open('skills/media/src.json', 'w+') as f:
-    try:
+try:
+    with open('skills/media/src.json') as f:
         files = json.load(f)
-    except Exception:
-        json.dump(files, f)
+except Exception:
+    with open('skills/media/src.json', 'w+') as f:
+        json.dump(files, f, indent=2)
 
 @skillable
 def save(data, context):
