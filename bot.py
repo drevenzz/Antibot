@@ -7,8 +7,6 @@ import time
 from common.util import sanitize, show_message, gen_file
 import os
 
-REFRESHTIME = 300
-
 creds = {
     'email': os.environ['AMINO_USER'],
     'password': os.environ['AMINO_PASS']
