@@ -8,8 +8,6 @@ from common.util import sanitize, show_message, gen_file
 import os
 from threading import Timer
 
-# loop = asyncio.get_event_loop()
-
 creds = {
     'email': os.environ['AMINO_USER'],
     'password': os.environ['AMINO_PASS']
@@ -21,11 +19,10 @@ print('Logged in.')
 # Helper function to send a message
 def send_message(com, msg):
     sub = amino.SubClient(comId=com, profile=client.profile)
-    #try:
-    sub.send_message(**msg)
-    #except Exception:
-    #    print("Something happened. The message might have been sent anyway tho'.")
-
+    try:
+        sub.send_message(**msg)
+    except Exception:
+        print("Something happened. The message might have been sent anyway tho'.")
 
 # Wait for incoming text messages
 @client.callbacks.event('on_text_message')
