@@ -6,8 +6,9 @@ import skills
 import time
 from common.util import sanitize, show_message, gen_file
 import os
+from threading import Timer
 
-REFRESHTIME = 300
+# loop = asyncio.get_event_loop()
 
 creds = {
     'email': os.environ['AMINO_USER'],
@@ -25,15 +26,19 @@ def send_message(com, msg):
     #except Exception:
     #    print("Something happened. The message might have been sent anyway tho'.")
 
+
 # Wait for incoming text messages
 @client.callbacks.event('on_text_message')
 def on_text_message(data):
     show_message(data)
     if data.message.content[0] != '$': return
-    msg = skills.check(data)
-    if not msg: return
-    msg.update(chatId=data.message.chatId)
-    send_message(data.comId, msg)
+    def check():
+        msg = skills.check(data)
+        if not msg: return
+        msg.update(chatId=data.message.chatId)
+        send_message(data.comId, msg)
+    task = Timer(0, check)
+    task.start()
 
 @client.callbacks.event('on_group_member_join')
 def on_group_member_join(data):
